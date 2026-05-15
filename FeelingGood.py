@@ -140,9 +140,6 @@ class htmlparser(HTMLParser):
         soup = BeautifulSoup(content, "html.parser")
         self.title = soup.title.string
 
-        #for element in soup(["title", "style", "head", "meta"]):
-             #element.decompose()
-
         #checks if both are true, then ensures proper titling
         if soup.title and soup.title.string:
              self.title = soup.title.string.strip()
@@ -151,7 +148,6 @@ class htmlparser(HTMLParser):
 
         self.title = self.title.split("|")[0].strip()
         print(soup.title)
-        #print(self.title)
 
         #main section which lowers and only grabs words which are not in STOP_WORDS
         main_content = soup.find("div", class_="body") or soup

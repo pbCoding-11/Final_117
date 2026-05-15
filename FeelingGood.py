@@ -2,7 +2,7 @@
 Description: A Program that creates a widget where a user can search a local database for a book via its title,
             and see the 10 most common words inside the text. The URL is taken from Project Gutenberg
             and the database is ran using SQLite3
-Author: PAtrick Bowlus
+Author: Patrick Bowlus
 Date: 5/4/2026
 """
 
